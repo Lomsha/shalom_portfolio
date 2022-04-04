@@ -50,7 +50,7 @@ class BlogsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to blogs_url, notice: "Blog was successfully deleted." }
       format.json { head :no_content }
-    end
+    end  
   end
 
   private
