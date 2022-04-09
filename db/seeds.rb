@@ -34,8 +34,8 @@ end
       Etiam sit amet nunc tempor, malesuada dolor fermentum, luctus erat. Nullam in iaculis arcu. 
       Curabitur non arcu arcu. Etiam non nibh consequat, laoreet nisl id, mattis augue. 
       Nulla pulvinar justo non mattis fringilla." ,
-      main_image: "https://via.placeholder.com/600.png/09f/fff",
-      thumb_image: "https://via.placeholder.com/300.png/09f/fff"
+      main_image: "https://via.placeholder.com/100.png/09f/fff",
+      thumb_image: "https://via.placeholder.com/100.png/09f/fff"
   )
 end 
 1.times do |portfolio_item|
@@ -50,8 +50,8 @@ end
         Etiam sit amet nunc tempor, malesuada dolor fermentum, luctus erat. Nullam in iaculis arcu. 
         Curabitur non arcu arcu. Etiam non nibh consequat, laoreet nisl id, mattis augue. 
         Nulla pulvinar justo non mattis fringilla." ,
-        main_image: "https://via.placeholder.com/600.png/09f/fff",
-        thumb_image: "https://via.placeholder.com/300.png/09f/fff"
+        main_image: "https://via.placeholder.com/100.png/09f/fff",
+        thumb_image: "https://via.placeholder.com/100.png/09f/fff"
     )
   end 
 
