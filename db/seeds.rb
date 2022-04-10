@@ -54,6 +54,19 @@ end
         thumb_image: "https://via.placeholder.com/100.png/09f/fff"
     )
   end 
+  
+3.times do |technology|
+ Portfolio.last.technologies.create!(
+  name: "Technology #{technology}",
 
+  
+  #An alternative method would be 
+  # Technology.create!(
+  # portfolio_id: Portfolio.last.id
+  # name: "Technology #{technology}",)
+  
+)
+end 
 puts "5 skills created"
 puts "9 portfolio items"
+puts "3 technoligies  created"
