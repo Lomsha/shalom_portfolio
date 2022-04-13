@@ -7,15 +7,15 @@ class User < ApplicationRecord
          validates_presence_of :name 
 
          attr_accessor :full_name
-         before_validation :set_names
+         before_validation :name
 
-        #  how to integrate a virtual attribute to extraxt first and last name in rails
-        #  def first_name
-        #   self.name.split.first
-        #  end
-        #  def last_name
-        #   self.name.split.last
-        #  end 
+        #integrate a virtual attribute to extraxt first and last name in rails
+         def first_name
+          self.name.split.first
+         end
+         def last_name
+          self.name.split.last
+         end 
 
   # private
 
