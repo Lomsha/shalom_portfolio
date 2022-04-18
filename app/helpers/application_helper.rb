@@ -17,4 +17,8 @@ module ApplicationHelper
          content_tag(:p, greeting, class: "source-greeting" )
            end 
     end
+
+     def copyright_generator
+       KarisViewTool::Renderer.copyright 'Benshalom Kariuki','All rights reserved'
+     end 
 end
