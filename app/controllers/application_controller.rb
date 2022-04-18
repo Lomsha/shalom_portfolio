@@ -4,6 +4,13 @@ class ApplicationController < ActionController::Base
      include SetSource
      include CurrentUserConcern
      include DefaultPageContent
+  end
 
-     
-end
+# module KarisViewTool
+#      class Renderer
+#           def self.copyright name, msg 
+#                "&copy: #{Time.now.year} | <b>#{name}<b> #{msg}".html_safe
+#           end
+#      end
+# end 
+
