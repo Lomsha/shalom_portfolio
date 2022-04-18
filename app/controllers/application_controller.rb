@@ -5,5 +5,17 @@ class ApplicationController < ActionController::Base
      include CurrentUserConcern
      include DefaultPageContent
 
-     
-end
+     before_action :set_copyright
+
+     def set_copyright
+     @copyright = ShalomViewTool::Renderer.copyright 'Benshalom Kariuki','All rights reserved'
+     end 
+  end
+
+module ShalomViewTool
+     class Renderer
+          def self.copyright name, msg 
+               "&copy: #{Time.now.year} | <b>#{name}<b> #{msg}".html_safe
+          end
+     end
+end 
