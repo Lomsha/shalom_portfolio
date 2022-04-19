@@ -1,5 +1,6 @@
 current directory: /home/benshalom/shalom_portfolio/vendor/bundle/ruby/2.5.0/gems/mini_racer-0.4.0/ext/mini_racer_extension
-/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby -I /usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20220417-27479-clasjl.rb extconf.rb
+/usr/share/rvm/rubies/ruby-2.5.1/bin/ruby -I /usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20220419-26981-ne5mfn.rb extconf.rb
+Ignoring mini_racer-0.4.0 because its extensions are not built. Try: gem pristine mini_racer --version 0.4.0
 checking for -lpthread... yes
 creating Makefile
 
@@ -48,4 +49,4 @@ linking shared-object mini_racer_extension.so
 
 current directory: /home/benshalom/shalom_portfolio/vendor/bundle/ruby/2.5.0/gems/mini_racer-0.4.0/ext/mini_racer_extension
 make DESTDIR\= install
-/usr/bin/install -m 0755 mini_racer_extension.so ./.gem.20220417-27479-xv1ewo
+/usr/bin/install -m 0755 mini_racer_extension.so ./.gem.20220419-26981-1o35rg9
