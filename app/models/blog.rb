@@ -14,4 +14,6 @@ class Blog < ApplicationRecord
     def self.featured_blogs
         limit(2)
     end
+    extend FriendlyId
+    friendly_id :title, use: :slugged
 end

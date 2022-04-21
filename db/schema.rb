@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2022_03_28_153405) do
 ActiveRecord::Schema.define(version: 2022_03_28_153405) do
 ActiveRecord::Schema.define(version: 2022_04_12_160046) do
 ActiveRecord::Schema.define(version: 2022_03_28_153405) do
+ActiveRecord::Schema.define(version: 2022_04_06_051549) do
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"
@@ -29,6 +30,8 @@ ActiveRecord::Schema.define(version: 2022_03_28_153405) do
     t.integer "topic_id"
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
     t.index ["topic_id"], name: "index_blogs_on_topic_id"
+    t.string "slug"
+    t.index ["slug"], name: "index_blogs_on_slug", unique: true
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
