@@ -5,15 +5,44 @@
 <table>
   <thead>
     <tr>
+<<<<<<< HEAD
       <th>Blog Title</th>
       <th>Date</th>
       <th>Body</th>
       <th colspan="4"></th>
+=======
+<<<<<<< HEAD
+      <th>Blog Title</th>
+      <th>Date</th>
+      <th>Body</th>
+      <th colspan="4"></th>
+=======
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+>>>>>>> Initial commit
+>>>>>>> fixforbug
     </tr>
   </thead>
 
   <tbody>
+<<<<<<< HEAD
     <%= render @blogs %>
+=======
+<<<<<<< HEAD
+    <%= render @blogs %>
+=======
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= blog.title %></td>
+        <td><%= blog.body %></td>
+        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+        <td><%= link_to 'Delete Blog', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+>>>>>>> Initial commit
+>>>>>>> fixforbug
   </tbody>
 </table>
 

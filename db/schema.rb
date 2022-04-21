@@ -10,13 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_04_12_160046) do
+=======
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 2022_04_12_160046) do
+=======
+ActiveRecord::Schema.define(version: 2022_03_28_153405) do
+>>>>>>> Initial commit
+>>>>>>> fixforbug
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fixforbug
     t.string "slug"
     t.integer "status", default: 0
     t.integer "topic_id"
@@ -83,6 +95,11 @@ ActiveRecord::Schema.define(version: 2022_04_12_160046) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Initial commit
+>>>>>>> fixforbug
   end
 
 end

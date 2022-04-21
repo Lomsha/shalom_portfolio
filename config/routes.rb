@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fixforbug
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'log-out', sign_up: 'register' }
   resources :portfolios, except: [:show]
   get 'angular-items',  to: 'portfolios#angular'
@@ -13,5 +17,11 @@ Rails.application.routes.draw do
   end 
   root 'pages#home'
 
+<<<<<<< HEAD
+=======
+=======
+  resources :blogs
+>>>>>>> Initial commit
+>>>>>>> fixforbug
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
