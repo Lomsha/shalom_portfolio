@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+
 =======
 <<<<<<< HEAD
 >>>>>>> fixforbug
@@ -17,11 +17,11 @@ Rails.application.routes.draw do
   end 
   root 'pages#home'
 
-<<<<<<< HEAD
 =======
+  resources :blogs
+>>>>>>> fixforbug
 =======
   resources :blogs
 >>>>>>> Initial commit
->>>>>>> fixforbug
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

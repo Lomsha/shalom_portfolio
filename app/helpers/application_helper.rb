@@ -1,7 +1,5 @@
 module ApplicationHelper
-<<<<<<< HEAD
 =======
-<<<<<<< HEAD
 >>>>>>> fixforbug
 
     def login_helper
@@ -25,9 +23,8 @@ module ApplicationHelper
      def copyright_generator
        KarisViewTool::Renderer.copyright 'Benshalom Kariuki','All rights reserved'
      end 
-<<<<<<< HEAD
 =======
+>>>>>>> fixforbug
 =======
 >>>>>>> Initial commit
->>>>>>> fixforbug
 end

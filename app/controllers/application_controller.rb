@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
-<<<<<<< HEAD
+
 =======
-<<<<<<< HEAD
 >>>>>>> fixforbug
      protect_from_forgery  with: :exception
      include DeviseWhitelist
@@ -18,10 +17,11 @@ class ApplicationController < ActionController::Base
 #      end
 # end 
 
-<<<<<<< HEAD
 =======
+     
+end
+>>>>>>> fixforbug
 =======
      
 end
 >>>>>>> Initial commit
->>>>>>> fixforbug

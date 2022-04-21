@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-<<<<<<< HEAD
+
   before_action :set_blog, only: %i[ show edit update destroy toggle_status]
   layout "blog"
   # GET /blogs or /blogs.json
@@ -7,7 +7,6 @@ class BlogsController < ApplicationController
     @blogs = Blog.special_blogs
     @page_title = "My Portfolio Blog"
 =======
-<<<<<<< HEAD
   before_action :set_blog, only: %i[ show edit update destroy toggle_status]
   layout "blog"
   # GET /blogs or /blogs.json
@@ -22,20 +21,20 @@ class BlogsController < ApplicationController
     @blogs = Blog.all
 >>>>>>> Initial commit
 >>>>>>> fixforbug
+=======
+>>>>>>> Initial commit
   end
 
   # GET /blogs/1 or /blogs/1.json
   def show
-<<<<<<< HEAD
     @page_title = @blog.title
     @seo_keywords = @blog.body
 =======
-<<<<<<< HEAD
     @page_title = @blog.title
     @seo_keywords = @blog.body
+>>>>>>> fixforbug
 =======
 >>>>>>> Initial commit
->>>>>>> fixforbug
   end
 
   # GET /blogs/new
@@ -78,10 +77,8 @@ class BlogsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to blogs_url, notice: "Blog was successfully deleted." }
       format.json { head :no_content }
-<<<<<<< HEAD
     end  
 =======
-<<<<<<< HEAD
     end  
   end
 
@@ -97,28 +94,32 @@ class BlogsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
       @blog = Blog.friendly.find(params[:id])
-=======
     end
+  end
+
+    def toggle_status
+      if @blog.draft?
+        @blog.published!
+      elsif  @blog.published?
+        @blog.draft!
+      end
+     redirect_to blogs_url, notice: "Blog was successfully updated."
+    end
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_blog
+      @blog = Blog.friendly.find(params[:id])
+      @blog = Blog.find(params[:id])
 >>>>>>> fixforbug
+=======
+    end
   end
 
-    def toggle_status
-      if @blog.draft?
-        @blog.published!
-      elsif  @blog.published?
-        @blog.draft!
-      end
-     redirect_to blogs_url, notice: "Blog was successfully updated."
-    end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
-<<<<<<< HEAD
-      @blog = Blog.friendly.find(params[:id])
-=======
       @blog = Blog.find(params[:id])
 >>>>>>> Initial commit
->>>>>>> fixforbug
     end
 
     # Only allow a list of trusted parameters through.
@@ -126,13 +127,9 @@ class BlogsController < ApplicationController
       params.require(:blog).permit(:title, :body)
     end
 end
-<<<<<<< HEAD
 
 
 =======
-<<<<<<< HEAD
-
-
+>>>>>>> fixforbug
 =======
 >>>>>>> Initial commit
->>>>>>> fixforbug
