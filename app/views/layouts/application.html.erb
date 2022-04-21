@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+<<<<<<< HEAD
     <title><%= @page_title%></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <meta name="keywords" content="<%=  @seo_keywords%>" />
 
+=======
+    <title>ShalomPortfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+>>>>>>> Initial commit
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+<<<<<<< HEAD
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
 
@@ -23,5 +31,8 @@
     <%= copyright_generator %>
     
    <%= source_helper("application")  %>
+=======
+    <%= yield %>
+>>>>>>> Initial commit
   </body>
 </html>

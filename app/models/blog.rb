@@ -1,4 +1,5 @@
 class Blog < ApplicationRecord
+<<<<<<< HEAD
     enum status: {draft: 0, published: 1 }
     extend FriendlyId
     friendly_id :title, use: :slugged
@@ -13,4 +14,6 @@ class Blog < ApplicationRecord
     def self.featured_blogs
         limit(2)
     end
+=======
+>>>>>>> Initial commit
 end

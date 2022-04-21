@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+<<<<<<< HEAD
      protect_from_forgery  with: :exception
      include DeviseWhitelist
      include SetSource
@@ -14,3 +15,7 @@ class ApplicationController < ActionController::Base
 #      end
 # end 
 
+=======
+     
+end
+>>>>>>> Initial commit
