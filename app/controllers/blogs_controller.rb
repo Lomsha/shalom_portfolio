@@ -6,35 +6,27 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.special_blogs
     @page_title = "My Portfolio Blog"
-=======
   before_action :set_blog, only: %i[ show edit update destroy toggle_status]
   layout "blog"
   # GET /blogs or /blogs.json
   def index
     @blogs = Blog.special_blogs
     @page_title = "My Portfolio Blog"
-=======
   before_action :set_blog, only: %i[ show edit update destroy ]
 
   # GET /blogs or /blogs.json
   def index
     @blogs = Blog.all
->>>>>>> Initial commit
->>>>>>> fixforbug
-=======
->>>>>>> Initial commit
   end
 
   # GET /blogs/1 or /blogs/1.json
   def show
     @page_title = @blog.title
     @seo_keywords = @blog.body
-=======
     @page_title = @blog.title
     @seo_keywords = @blog.body
->>>>>>> fixforbug
-=======
->>>>>>> Initial commit
+    @page_title = @blog.title
+    @seo_keywords = @blog.body
   end
 
   # GET /blogs/new
@@ -78,7 +70,6 @@ class BlogsController < ApplicationController
       format.html { redirect_to blogs_url, notice: "Blog was successfully deleted." }
       format.json { head :no_content }
     end  
-=======
     end  
   end
 
@@ -110,8 +101,6 @@ class BlogsController < ApplicationController
     def set_blog
       @blog = Blog.friendly.find(params[:id])
       @blog = Blog.find(params[:id])
->>>>>>> fixforbug
-=======
     end
   end
 
@@ -119,7 +108,6 @@ class BlogsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
       @blog = Blog.find(params[:id])
->>>>>>> Initial commit
     end
 
     # Only allow a list of trusted parameters through.
@@ -129,7 +117,5 @@ class BlogsController < ApplicationController
 end
 
 
-=======
->>>>>>> fixforbug
-=======
->>>>>>> Initial commit
+
+

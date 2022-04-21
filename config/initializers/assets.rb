@@ -14,11 +14,9 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( admin.js blogs.css )
 Rails.application.config.assets.precompile += %w( admin.js portfolios.css )
-=======
 Rails.application.config.assets.precompile += %w( admin.js blogs.css )
 Rails.application.config.assets.precompile += %w( admin.js portfolios.css )
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
->>>>>>> fixforbug
-=======
+Rails.application.config.assets.precompile += %w( admin.js blogs.css )
+Rails.application.config.assets.precompile += %w( admin.js portfolios.css )
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
->>>>>>> Initial commit

@@ -12,13 +12,11 @@
 
 
 
-=======
 ActiveRecord::Schema.define(version: 2022_04_12_160046) do
 ActiveRecord::Schema.define(version: 2022_03_28_153405) do
->>>>>>> fixforbug
-=======
 ActiveRecord::Schema.define(version: 2022_03_28_153405) do
->>>>>>> Initial commit
+ActiveRecord::Schema.define(version: 2022_04_12_160046) do
+ActiveRecord::Schema.define(version: 2022_03_28_153405) do
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"
@@ -26,8 +24,6 @@ ActiveRecord::Schema.define(version: 2022_03_28_153405) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
 
-=======
->>>>>>> fixforbug
     t.string "slug"
     t.integer "status", default: 0
     t.integer "topic_id"
@@ -94,10 +90,6 @@ ActiveRecord::Schema.define(version: 2022_03_28_153405) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-=======
->>>>>>> fixforbug
-=======
->>>>>>> Initial commit
   end
 
 end

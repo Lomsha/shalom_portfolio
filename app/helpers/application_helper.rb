@@ -1,6 +1,4 @@
 module ApplicationHelper
-=======
->>>>>>> fixforbug
 
     def login_helper
      if current_user.is_a?(User) 
@@ -23,8 +21,4 @@ module ApplicationHelper
      def copyright_generator
        KarisViewTool::Renderer.copyright 'Benshalom Kariuki','All rights reserved'
      end 
-=======
->>>>>>> fixforbug
-=======
->>>>>>> Initial commit
 end

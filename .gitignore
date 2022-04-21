@@ -30,6 +30,4 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
->>>>>>> Initial commit
-=======
->>>>>>> Initial commit
+vendor/bundle/ruby/2.5.0/gems/libv8-node-15.14.0.1-x86_64-linux/vendor/v8/out.gn/libv8/obj/libv8_monolith.a

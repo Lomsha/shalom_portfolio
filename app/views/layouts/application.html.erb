@@ -8,30 +8,16 @@
 
     <meta name="keywords" content="<%=  @seo_keywords%>" />
 
-=======
-    <title><%= @page_title%></title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <meta name="keywords" content="<%=  @seo_keywords%>" />
-
-=======
     <title>ShalomPortfolio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
->>>>>>> Initial commit
->>>>>>> fixforbug
-=======
->>>>>>> Initial commit
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
 
-=======
->>>>>>> fixforbug
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
 
@@ -39,18 +25,12 @@
  <%= login_helper %>
        
 
-=======
     <%= yield %>
 
     <%= copyright_generator %>
     
    <%= source_helper("application")  %>
-=======
     <%= yield %>
->>>>>>> Initial commit
->>>>>>> fixforbug
-=======
     <%= yield %>
->>>>>>> Initial commit
   </body>
 </html>
