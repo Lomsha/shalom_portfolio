@@ -1,4 +1,5 @@
 class Blog < ApplicationRecord
+    # belongs_to :topic
 
     enum status: {draft: 0, published: 1 }
     extend FriendlyId
@@ -6,7 +7,7 @@ class Blog < ApplicationRecord
     validates_presence_of :title, :body
 
 
-    belongs_to :topic
+    
     def self.special_blogs
         all
     end 

@@ -1,30 +1,15 @@
 class BlogsController < ApplicationController
-
   before_action :set_blog, only: %i[ show edit update destroy toggle_status]
   layout "blog"
+
   # GET /blogs or /blogs.json
   def index
     @blogs = Blog.special_blogs
     @page_title = "My Portfolio Blog"
-  before_action :set_blog, only: %i[ show edit update destroy toggle_status]
-  layout "blog"
-  # GET /blogs or /blogs.json
-  def index
-    @blogs = Blog.special_blogs
-    @page_title = "My Portfolio Blog"
-  before_action :set_blog, only: %i[ show edit update destroy ]
+  end   
 
-  # GET /blogs or /blogs.json
-  def index
-    @blogs = Blog.all
-  end
-
-  # GET /blogs/1 or /blogs/1.json
+    # GET /blogs/1 or /blogs/1.json
   def show
-    @page_title = @blog.title
-    @seo_keywords = @blog.body
-    @page_title = @blog.title
-    @seo_keywords = @blog.body
     @page_title = @blog.title
     @seo_keywords = @blog.body
   end
@@ -32,10 +17,6 @@ class BlogsController < ApplicationController
   # GET /blogs/new
   def new
     @blog = Blog.new
-  end
-
-  # GET /blogs/1/edit
-  def edit
   end
 
   # POST /blogs or /blogs.json
@@ -51,6 +32,10 @@ class BlogsController < ApplicationController
     end
   end
 
+  # GET /blogs/1/edit
+  def edit
+  end
+  
   # PATCH/PUT /blogs/1 or /blogs/1.json
   def update
     respond_to do |format|
@@ -73,6 +58,15 @@ class BlogsController < ApplicationController
     end  
   end
 
+    
+
+  private
+
+    # Use callbacks to share common setup or constraints between actions.
+    def set_blog
+      @blog = Blog.friendly.find(params[:id])
+    end
+
     def toggle_status
       if @blog.draft?
         @blog.published!
@@ -81,41 +75,11 @@ class BlogsController < ApplicationController
       end
      redirect_to blogs_url, notice: "Blog was successfully updated."
     end
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_blog
-      @blog = Blog.friendly.find(params[:id])
-    end
-  end
-
-    def toggle_status
-      if @blog.draft?
-        @blog.published!
-      elsif  @blog.published?
-        @blog.draft!
-      end
-     redirect_to blogs_url, notice: "Blog was successfully updated."
-    end
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_blog
-      @blog = Blog.friendly.find(params[:id])
-      @blog = Blog.find(params[:id])
-    end
-  end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_blog
-      @blog = Blog.friendly.find(params[:id])
-    end
-
+  
     # Only allow a list of trusted parameters through.
     def blog_params
       params.require(:blog).permit(:title, :body)
     end
-    
-end
 
 
 
