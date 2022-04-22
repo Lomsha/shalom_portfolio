@@ -4,7 +4,7 @@ class User < ApplicationRecord
   ## The :user role is added by default and shouldn't be included in this list.             ##
   ## The :root_admin can access any page regardless of access settings. Use with caution!   ##
   ## The multiple option can be set to true if you need users to have multiple roles.       ##
-  petergate(roles: [:admin, :editor], multiple: false)                                      ##
+  petergate(roles: [:site_admin, :editor], multiple: false)                                      ##
   ############################################################################################ 
  
 
@@ -13,10 +13,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable , :trackable
 
-         validates_presence_of :name 
+        #  validates_presence_of :name 
 
-         attr_accessor :full_name
-         before_validation :name
+        #  attr_accessor :full_name
+        #  before_validation :name
 
         #integrate a virtual attribute to extraxt first and last name in rails
          def first_name

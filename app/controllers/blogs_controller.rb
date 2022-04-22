@@ -1,6 +1,9 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: %i[ show edit update destroy toggle_status]
   layout "blog"
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+
+
 
   # GET /blogs or /blogs.json
   def index
@@ -19,6 +22,10 @@ class BlogsController < ApplicationController
     @blog = Blog.new
   end
 
+  # GET /blogs/1/edit
+  def edit
+  end
+
   # POST /blogs or /blogs.json
   def create
     @blog = Blog.new(blog_params)
@@ -32,10 +39,8 @@ class BlogsController < ApplicationController
     end
   end
 
-  # GET /blogs/1/edit
-  def edit
-  end
   
+
   # PATCH/PUT /blogs/1 or /blogs/1.json
   def update
     respond_to do |format|

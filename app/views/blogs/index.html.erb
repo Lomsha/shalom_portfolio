@@ -5,32 +5,17 @@
 <table>
   <thead>
     <tr>
-
       <th>Blog Title</th>
       <th>Date</th>
       <th>Body</th>
-      <th colspan="4"></th>
-
-      
+      <th colspan="4"></th>      
     </tr>
   </thead>
 
   <tbody>
-
     <%= render @blogs %>
-    <%= render @blogs %>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.body %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Delete Blog', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
+</tbody>
 </table>
-
 <br>
 
-<%= link_to 'New Blog', new_blog_path %>
+<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
