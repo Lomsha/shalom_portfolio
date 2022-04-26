@@ -8,10 +8,13 @@
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secondary:focus 
+
+{
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
+
 
 
 /*
@@ -52,4 +55,14 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+
 }
+
+
+/*
+ * Custom styles
+ */
+
+ .card-block {
+   color: black;
+ }
