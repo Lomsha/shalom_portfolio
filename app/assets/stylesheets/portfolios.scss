@@ -1,5 +1,8 @@
 @import "bootstrap";
 @import "jquery-ui";
+.bg{
+  color: dark
+}
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -17,4 +20,8 @@
 
   portfolio-form {
     padding: 20px;
+  }
+
+  .portfolio-container {
+    padding-top: 30px;
   }
