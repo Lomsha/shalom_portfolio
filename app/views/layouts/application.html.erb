@@ -15,23 +15,31 @@
 
   <body>
      <html lang="en" class="h-100">
+     
 
-      <body class="d-flex h-100 text-center text-white bg-dark">
+      <body class="d-flex h-100 text-center text-white"
+      
+      
+      
+      
+      >
+
       
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
+               <div id="background">
+               </div>
+
                 <%= render "shared/application_nav" %>
-
                 
+                <%= yield %>
 
-                  <%= yield %>
-                  <%= render "shared/application_footer" %>
-                
+                <%= render "shared/application_footer" %>
               
                 <%= source_helper("application")  %>
 
              </div>
 
-          </body>
+        </body>
   </body>
 </html>
