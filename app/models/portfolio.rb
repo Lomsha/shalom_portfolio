@@ -17,8 +17,5 @@ class Portfolio < ApplicationRecord
     end 
     scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') } 
     
-
-     
-
 end
 
