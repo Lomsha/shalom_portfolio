@@ -6,13 +6,12 @@
     </div>
     <div class="col-6 d-flex justify-content-end align-items-center">
       <nav class="nav blog-nav">
-      <%= login_helper 'nav-link' %>
+          <%= link_to "Home", root_path, class: "nav-link" %> 
           <%= link_to "About", about_me_path, class: "nav-link" %> 
           <%= link_to "Contact", contact_path, class: "nav-link" %> 
           <%= link_to "Blog", blogs_path, class: "nav-link" %> 
           <%= link_to "Portfolio", portfolios_path, class: "nav-link" %>
-          <%= link_to "Home", root_path, class: "nav-link" %> 
-
+          <%= login_helper 'nav-link' %>
        </nav> 
       </div>
     </div>
