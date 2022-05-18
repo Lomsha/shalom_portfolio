@@ -7,12 +7,21 @@
         </div>
 
         
+        <div class="p-4">
+           <h4> Topics </h4>
+
+           <% @side_bar_topics.each do |topic| %>
+                <p><%= link_to topic.title, topic_path(topic) %>
+            <% end %>
+
+        </div>
+
 
         <div class="p-4">
-          <h4 class="fst-italic">Elsewhere</h4>
+          <h4 class="fst-italic">Follow me on </h4>
           <ol class="list-unstyled social-links">
-            <li><a href="#"><%= fa_icon "github-square"%></a></li>
-            <li><a href="#"><%= fa_icon "linkedin"%></a></li>
+            <li><a href="https://github.com/Lomsha"><%= fa_icon "github-square"%></a></li>
+            <li><a href="https://www.linkedin.com/in/benshalom-kariuki-b25ba8124/"><%= fa_icon "linkedin"%></a></li>
           </ol>
         </div>
       </div>
