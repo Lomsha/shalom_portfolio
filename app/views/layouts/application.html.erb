@@ -7,8 +7,10 @@
     <title><%= @page_title%></title>
     <%= csrf_meta_tags %>
 
-    <meta name="keywords" content="<%=  @seo_keywords%>" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
 
+    <meta name="keywords" content="<%=  @seo_keywords%>" />
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -17,12 +19,7 @@
      <html lang="en" class="h-100">
      
 
-      <body class="d-flex h-100 text-center text-white"
-      
-      
-      
-      
-      >
+      <body class="d-flex h-100 text-center text-white">
 
       
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">

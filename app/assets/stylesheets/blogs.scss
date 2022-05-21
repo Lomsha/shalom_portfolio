@@ -13,6 +13,11 @@
     border-bottom: 1px solid #e5e5e5;
   }
   
+  body {
+    font-family: 'Lato', sans-serif;
+    color: #555;
+  }
+
   .blog-header-logo {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
     font-size: 2.25rem;
@@ -23,7 +28,9 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-family: 'Roboto Slab', serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-weight: normal;
+    color: #333;
   }
   
   .display-4 {
@@ -157,3 +164,31 @@
     .comment-name {
       font-weight: 700;
     }
+
+    .blogcrumb a {
+      font-size: 1.25em;
+      margin: 0px 10px 0px 10px;
+    }
+    
+  
+
+  .blog-sidebar-source {
+    margin-top: 20px;
+  }
+
+  // .blog-sidebar {
+    
+  // }
+
+
+
+
+
+
+
+
+
+
+
+
+  

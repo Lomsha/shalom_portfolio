@@ -1,10 +1,15 @@
 <div class="row g-5">
     <div class="col-md-8">
       <h1 class="pb-4 mb-4 fst-italic border-bottom">
-      My Blogs
+       Blogs
       
       </h1>
-      <%= link_to 'Create a New Blog', new_blog_path if logged_in?(:site_admin) %>
+     <span> 
+     <%= link_to 'Create a New Blog', new_blog_path if logged_in?(:site_admin) %>
+     </span>
+      <span>
+         <%= link_to "Topics", topics_path %>
+      </span>
       <%= yield %>
-      
+
   </div>

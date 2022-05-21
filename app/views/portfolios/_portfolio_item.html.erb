@@ -1,6 +1,6 @@
-<div class="col">
+<div class="col-md-4">
 <div class="card shadow-sm" data-id="<%= portfolio_item.id %>">
-<%= image_tag(portfolio_item.thumb_image_url) if portfolio_item.thumb_image_url %>
+<%= image_tag(portfolio_item.thumb_image_url, width: '100%') if portfolio_item.thumb_image_url %>
 
   <div class="card-body">
     <p class="card-text">
