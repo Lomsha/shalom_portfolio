@@ -7,7 +7,7 @@ ready = ->
        'you are part of the road - Stewart Brand Writer'
        'Welcome To My World'
     ],
-    typeSpeed: 35
+    typeSpeed: 10
   return 
 
 $(document).ready ready
