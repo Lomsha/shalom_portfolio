@@ -78,21 +78,14 @@ end
   
 3.times do |technology|
  Portfolio.last.technologies.create!(
-  name: "Technology #{technology}",
-
-  
-  #An alternative method would be 
-  # Technology.create!(
-  # portfolio_id: Portfolio.last.id
-  # name: "Technology #{technology}",)
-  
+  name: "Technology #{technology}"
 )
 end 
 puts "5 skills created"
 puts "9 portfolio items"
 
-puts "3 technoligies  created"
-puts "3 technoligies  created"
+puts "3 technologies  created"
+puts "3 technologies  created"
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
