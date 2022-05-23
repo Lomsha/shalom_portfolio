@@ -6,6 +6,6 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDISCLOUD_URL")  %>
+  url: <%= ENV["REDISCLOUD_URL"]  %>
   channel_prefix: shalom_portfolio_production
 
